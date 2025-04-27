@@ -1,0 +1,106 @@
+#services img {
+    height: 150px;
+}
+
+body #produk { 
+    min-width: 400px;
+}
+
+body .keranjangs {
+    min-width: 400px;
+}
+
+body .keranjangs-footer {
+    min-width: 400px;
+}
+
+#promo {
+    background: linear-gradient(270deg,#178306, #168306, #168306, #168306, #928007, #e24510 , rgb(255, 255, 10),  #928007, #928007, #168306, #168306);
+    background-size: 1300% 1300%;
+    animation: rainbow 3.5s ease infinite;
+}
+
+@keyframes rainbow {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+.navbar-brand {
+    text-shadow: #000000b2 7px 2px 6px;
+}
+
+.kartu .btn:hover {
+    background-color: rgb(4, 58, 99);
+    border: none;
+    color: #ffffff;
+    transform: scale(1.1);
+    transition: 0.2s;
+    box-shadow: rgb(0, 0, 0)0px 7px 22px 0px;
+}
+
+.kartu .btn:active {
+    background-color: rgb(41, 201, 245);
+}
+
+footer {
+    margin-top: auto;
+    min-width: 400px;
+}
+
+h1.category-gaming {
+    color: rgb(219, 0, 219);
+}
+
+.indonesia {
+    background: linear-gradient(to top,#efefef,#efefef,#ffffff,rgb(245, 84, 84), rgb(177, 20, 20),rgb(143, 13, 13), rgb(140, 16, 16));
+    /* background-size: 1300% 1300%; */
+    /* animation: rainbow 5s ease infinite; */
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    background: none;
+}
+
+.slide-track {
+    display: flex;
+    width: calc(250px * 12);
+    animation: scrollLogo 10s linear infinite;
+}
+
+.slide {
+    width: 250px;
+    height: 300px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.slide-track2 {
+    display: flex;
+    width: calc(250px * 4);
+    animation: moveright 5s linear infinite;
+}
+
+@keyframes scrollLogo {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes moveright {
+    0% {
+        transform: translateX(-70%);
+    }
+    100% {
+        transform: translateX(10%);
+    }
+}
+
+
+

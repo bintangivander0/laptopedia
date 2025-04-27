@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/png" href="./images/Laptopedia.png">
+    <title>Laptopedia</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-info navbar-info fixed-top py-2">
+      <div class="container">
+        <a class="navbar-brand text-white fw-bolder" href="index.html">
+          <img src="images/Laptopedia.png" alt="Laptopedia" width="70" height="55">
+          <span class="fs-1">Laptopedia</span>
+        </a>
+        <button 
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <form class="d-flex px-2" role="search">
+                <input id="searchInput" class="form-control me-3" type="search" placeholder="Cari..." aria-label="Search">
+                <button id="searchButton" class="btn btn-dark" type="submit"><span class="fs-5">Cari</span></button>
+              </form>
+            </li>
+            <li class="nav-item">
+              <a href="produk.html" class="nav-link"><span class="fs-5">Produk</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="keranjang.html" class="nav-link"><span class="fs-5">Keranjang</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#contact" class="nav-link"><span class="fs-5">Kontak</span></a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a class="btn dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person fs-4"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="login.html">Log Out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Produk -->
+    <section class="header p-5 mt-5 pb-5 pb-lg-0" id="produk">
+        <div class="container text-center container-fluid">
+            <div class="d-flex row align-items-center">
+              <h1 class="fw-bold display-5 bi-1-circle-fill category-gaming"> Gaming</h1>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ASUS ROG">
+                <img src="images/Asus ROG Zephyrus G14/gambar1.png" class="card-img-top" alt="Asus ROG Zephyrus G14">
+                <div class="card-body">
+                  <div class="col">
+                    <h5 class="card-title">
+                      <span class="fs-3">Asus ROG Zephyrus G14</span>
+                    </h5>
+                    <p class="card-text">ROG Zephyrus G14 laptop gaming dari Asus ROG yang dilengkapi dengan prosesor Ryzen 9 5900HS yang merupakan salah satu varian prosesor mobile kelas atas dari keluarga AMD Ryzen 5000 mobile.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 9 5900HS / RTX 3050</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 15.499.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ASUS ROG">
+                <img src="images/Asus ROG Zephyrus Duo 15 SE/gambar1.jpg" class="card-img-top" alt="Asus ROG Zephyrus Duo 15 SE">
+                <div class="card-body">
+                  <div class="col">
+                    <h5 class="card-title">
+                      <span class="fs-3">Asus ROG Zephyrus Duo 15 SE</span>
+                    </h5>
+                    <p class="card-text">Laptop gaming premium dengan layar ganda, performa luar biasa berkat Ryzen 9 dan RTX 3060.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 9 5900HX / RTX 3060</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 32GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" 300Hz + ScreenPad Plus</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 21.000.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="LENOVO LOQ">
+                <img src="images/Lenovo LOQ/gambar1.png" class="card-img-top" alt="Lenovo LOQ">
+                <div class="card-body">
+                  <div class="col">
+                    <h5 class="card-title">
+                      <span class="fs-3">Lenovo LOQ</span>
+                    </h5>
+                    <p class="card-text">Laptop gaming tangguh dengan prosesor AMD Ryzen dan grafis NVIDIA, ideal untuk multitasking dan game AAA.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 7 7840HS / RTX 4060</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 24.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="LENOVO LEGION">
+                <img src="images/Lenovo Legion 5/gambar1.png" class="card-img-top" alt="Lenovo Legion 5">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Lenovo Legion 5</span></h5>
+                  <p class="card-text">Laptop gaming dengan performa tinggi, didukung prosesor AMD Ryzen dan grafis NVIDIA RTX.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 7 5800H / RTX 3060</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 165Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 18.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ACER NITRO">
+                <img src="images/Acer Nitro 5/gambar1.jpg" class="card-img-top" alt="Acer Nitro 5">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Acer Nitro 5</span></h5>
+                  <p class="card-text">Laptop gaming populer dengan performa solid untuk gaming dan multitasking.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i5-12500H / RTX 3050</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 8GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 14.499.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="HP OMEN">
+                <img src="images/HP Omen 16/gambar1.webp" class="card-img-top" alt="HP Omen 16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">HP Omen 16</span></h5>
+                  <p class="card-text">Laptop gaming premium dengan desain elegan dan performa tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-12700H / RTX 3070</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16.1" QHD 165Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 25.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="DELL G15">
+                <img src="images/Dell G15/gambar1.jpg" class="card-img-top" alt="Dell G15">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Dell G15</span></h5>
+                  <p class="card-text">Laptop gaming dengan desain kokoh dan performa tinggi untuk gaming modern.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-11800H / RTX 3060</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 120Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 16.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="MSI KATANA">
+                <img src="images/MSI Katana GF66/gambar1.png" class="card-img-top" alt="MSI Katana GF66">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">MSI Katana GF66</span></h5>
+                  <p class="card-text">Laptop gaming dengan performa tinggi dan desain yang stylish.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-12650H / RTX 3050 Ti</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 17.499.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ASUS TUF">
+                <img src="images/Asus TUG Gaming F15/gambar1.jpg" class="card-img-top" alt="ASUS TUF Gaming F15">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Asus TUF Gaming F15</span></h5>
+                  <p class="card-text">Laptop gaming tangguh dengan daya tahan militer dan performa tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i5-11400H / RTX 3050</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 8GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 13.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="LENOVO IDEAPAD">
+                <img src="images/Lenovo IdeaPad Gaming 3/gambar1.jpg" class="card-img-top" alt="Lenovo IdeaPad Gaming 3">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Lenovo IdeaPad Gaming 3</span></h5>
+                  <p class="card-text">Laptop gaming entry-level dengan performa yang cukup untuk gaming kasual.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 5 5600H / GTX 1650</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 8GB / SSD 256GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" FHD 120Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 10.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="HP VICTUS">
+                <img src="images/HP Victus 16/gambar1.webp" class="card-img-top" alt="HP Victus 16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">HP Victus 16</span></h5>
+                  <p class="card-text">Laptop gaming dengan layar besar dan performa optimal untuk game AAA.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Ryzen 7 5800H / RTX 3050 Ti</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16.1" FHD 144Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 15.499.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ACER PREDATOR">
+                <img src="images/Acer Predator Helios 300/gambar1.jpg" class="card-img-top" alt="Acer Predator Helios 300">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Acer Predator Helios 300</span></h5>
+                  <p class="card-text">Laptop gaming kelas atas dengan performa luar biasa untuk gamer profesional.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-12700H / RTX 3070 Ti</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" QHD 165Hz</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 29.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-danger border-3 opacity-75">
+              <h1 class="fw-bold display-5 bi-2-circle-fill text-danger"> Workstation</h1>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="DELL Precision 5560">
+                <img src="images/Dell Precision 5560/gambar1.jpg" class="card-img-top" alt="DELL Precision 5560">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">DELL Precision 5560</span></h5>
+                  <p class="card-text">Laptop workstation premium dengan performa tinggi untuk desain grafis dan rendering.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel Xeon W-11955M / RTX A2000</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 32GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" UHD+ Touch</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 45.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="HP ZBook Fury 16">
+                <img src="images/HP ZBook Fury 16/gambar1.avif" class="card-img-top" alt="HP ZBook Fury 16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">HP ZBook Fury 16</span></h5>
+                  <p class="card-text">Workstation tangguh untuk kebutuhan profesional seperti CAD dan rendering 3D.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i9-12900HX / RTX A3000</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 64GB / SSD 2TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16" UHD+</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 65.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Lenovo ThinkPad P1 Gen 5">
+                <img src="images/Lenovo ThinkPad P1 Gen 5/gambar1.avif" class="card-img-top" alt="Lenovo ThinkPad P1 Gen 5">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Lenovo ThinkPad P1 Gen 5</span></h5>
+                  <p class="card-text">Workstation ringan dengan performa tinggi untuk kebutuhan profesional.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-12800H / RTX A2000</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 32GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16" WQXGA</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 39.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Apple MacBook Pro 16">
+                <img src="images/MacBook Pro 16/gambar1.jpg" class="card-img-top" alt="Apple MacBook Pro 16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Apple MacBook Pro 16</span></h5>
+                  <p class="card-text">Laptop workstation dengan performa tinggi untuk editing video dan desain grafis.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Apple M1 Max</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 32GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16" Liquid Retina XDR</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 50.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="MSI Creator Z16">
+                <img src="images/MSI Creator Z16/gambar1.jpg" class="card-img-top" alt="MSI Creator Z16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">MSI Creator Z16</span></h5>
+                  <p class="card-text">Laptop workstation untuk kreator konten dengan performa tinggi dan layar presisi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i9-11900H / RTX 3060</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 32GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16" QHD+ Touch</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 42.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-warning border-3 opacity-75">
+              <h1 class="fw-bold display-5 bi-3-circle-fill text-warning"> Ultrabook</h1>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Dell XPS 13 Plus">
+                <img src="images/Dell XPS 13 Plus/gambar1.jpg" class="card-img-top" alt="Dell XPS 13 Plus">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Dell XPS 13 Plus</span></h5>
+                  <p class="card-text">Ultrabook premium dengan desain minimalis dan performa tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-1260P / Iris Xe</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 13.4" UHD+ Touch</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 25.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="HP Spectre x360">
+                <img src="images/HP Spectre x360/gambar1.avif" class="card-img-top" alt="HP Spectre x360">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">HP Spectre x360</span></h5>
+                  <p class="card-text">Ultrabook convertible dengan desain elegan dan performa tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-1255U / Iris Xe</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 13.5" OLED Touch</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 27.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ASUS ZenBook 14 OLED">
+                <img src="images/Asus ZenBook 14 OLED/gambar1.jpg" class="card-img-top" alt="ASUS ZenBook 14 OLED">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">ASUS ZenBook 14 OLED</span></h5>
+                  <p class="card-text">Ultrabook stylish dengan layar OLED dan performa tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> AMD Ryzen 7 5800U / Radeon Vega</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" OLED 2.8K</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 19.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Microsoft Surface Laptop 5">
+                <img src="images/Microsoft Surface Laptop 5/gambar1.avif" class="card-img-top" alt="Microsoft Surface Laptop 5">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Microsoft Surface Laptop 5</span></h5>
+                  <p class="card-text">Ultrabook premium dengan desain minimalis dan daya tahan baterai tinggi.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-1255U / Iris Xe</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 512GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 13.5" PixelSense</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 25.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="LG Gram 16">
+                <img src="images/LG Gram 16/gambar1.avif" class="card-img-top" alt="LG Gram 16">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">LG Gram 16</span></h5>
+                  <p class="card-text">Ultrabook ringan dengan layar besar dan daya tahan baterai luar biasa.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel i7-1260P / Iris Xe</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 16GB / SSD 1TB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 16" WQXGA</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 28.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <hr class="border border-success border-3 opacity-75">
+              <h1 class="fw-bold display-5 bi-4-circle-fill text-success"> Affordable</h1>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="AXIOO MYBOOK">
+                <img src="images/Axioo Mybook 14/gambar1.jpg" class="card-img-top" alt="AXIOO MyBook 14">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">AXIOO MyBook 14</span></h5>
+                  <p class="card-text">Laptop ringan dan terjangkau untuk kebutuhan sehari-hari.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel Celeron N4020</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / SSD 256GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" HD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 3.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="HP 14s">
+                <img src="images/HP 14s/gambar1.avif" class="card-img-top" alt="HP 14s">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">HP 14s</span></h5>
+                  <p class="card-text">Laptop ringan dan terjangkau untuk kebutuhan sehari-hari dengan performa memadai.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel Pentium Gold 7505</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / SSD 256GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" FHD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 4.999.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>             
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="ASUS VivoBook">
+                <img src="images/ASUS VivoBook/gambar1.jpg" class="card-img-top" alt="ASUS VivoBook">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">ASUS VivoBook</span></h5>
+                  <p class="card-text">Laptop stylish dengan performa cukup untuk kebutuhan sehari-hari.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> AMD Athlon Silver 3050U</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / SSD 256GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" HD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 4.799.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>              
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Lenovo IdeaPad 1">
+                <img src="images/Lenovo IdeaPad 1/gambar1.jpg " class="card-img-top" alt="Lenovo IdeaPad 1">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Lenovo IdeaPad 1</span></h5>
+                  <p class="card-text">Laptop entry-level dengan desain minimalis dan performa cukup.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> AMD A4-9120e</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / eMMC 64GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" HD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 3.799.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>              
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="Acer Aspire 3">
+                <img src="images/Acer Aspire 3/gambar1.jpg" class="card-img-top" alt="Acer Aspire 3">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">Acer Aspire 3</span></h5>
+                  <p class="card-text">Laptop ekonomis dengan performa cukup untuk tugas ringan.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel Celeron N4500</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / SSD 128GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 15.6" HD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 4.299.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>              
+              <div class="card kartu m-3 shadow" style="width: 17.5rem;" id="AXIOO SlimBook">
+                <img src="images/Axioo Slimbook/gambar1.jpg" class="card-img-top" alt="AXIOO SlimBook">
+                <div class="card-body">
+                  <h5 class="card-title"><span class="fs-3">AXIOO SlimBook</span></h5>
+                  <p class="card-text">Laptop lokal dengan harga terjangkau dan desain modern.</p>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="bi bi-cpu fs-4"></i><span class="fs-5"> Intel Celeron N3350</span></li>
+                    <li class="list-group-item"><i class="bi bi-memory fs-4"></i><span class="fs-5"> RAM 4GB / SSD 128GB</span></li>
+                    <li class="list-group-item"><i class="bi bi-display fs-4"></i><span class="fs-5"> Layar 14" HD</span></li>
+                    <li class="list-group-item"><i class="bi bi-cash-coin fs-4"></i><span class="fs-5"> Rp. 3.599.000,00</span></li>
+                  </ul>
+                  <div class="btn-group btn-group" role="group">
+                    <button href="#" type="button" class="btn btn-outline-dark">Beli sekarang</button>
+                    <button href="#" type="button" class="btn btn-outline-dark btn-keranjang">Keranjang</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2025 Laptopedia.com</p>
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up h1 text-info"></i>
+        </a>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+    <!-- tombol keranjang -->
+    <script>
+      // Fungsi untuk menangani klik tombol "Keranjang"
+      function addToCart(productId) {
+        // Mengambil data produk dari array `products` yang ada di produk.js
+        const product = products.find(p => p.id === productId);
+    
+        if (!product) return;
+    
+        // Ambil data keranjang dari sessionStorage
+        let cart = JSON.parse(sessionStorage.getItem("cart")) || [];
+    
+        // Periksa apakah produk sudah ada di keranjang
+        const existingItem = cart.find(item => item.id === productId);
+        if (existingItem) {
+          existingItem.quantity += 1; // Jika sudah ada, tambahkan kuantitas
+        } else {
+          // Jika belum ada, tambahkan produk baru ke keranjang
+          cart.push({
+            id: product.id,
+            title: product.title,
+            price: product.price,
+            image: product.image,
+            quantity: 1
+          });
+        }
+    
+        // Simpan data keranjang ke sessionStorage
+        sessionStorage.setItem("cart", JSON.stringify(cart));
+    
+        // Redirect pengguna ke keranjang.html
+        window.location.href = "keranjang.html";
+      }
+    
+      // Tambahkan event listener ke semua tombol "Keranjang"
+      document.addEventListener("DOMContentLoaded", () => {
+        const cartButtons = document.querySelectorAll(".btn-keranjang"); // Semua tombol "Keranjang"
+        cartButtons.forEach((button, index) => {
+          button.addEventListener("click", () => addToCart(index + 1)); // index + 1 = productId
+        });
+      });
+    </script>
+    <!-- keranjang -->
+    <script src="js/keranjang.js"></script>
+    <!-- Produk -->
+    <script src="js/produk.js"></script>
+    <!-- Search -->
+    <script src="js/search.js"></script>    
+  </body>
+</html>

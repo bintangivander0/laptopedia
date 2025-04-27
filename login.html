@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="icon" type="image/png" href="./images/Laptopedia.png">
+        <title>Login | Laptopedia</title>
+    </head>
+    <body style="background: linear-gradient(270deg,#073a4e, #073a4e, #073a4e, #074a65, #0c77a2 , #074a65,  #073a4e, #073a4e, #073a4e, #073a4e);
+    background-size: 1300% 1300%;
+    animation: rainbow 12s ease infinite;">  <!-- Background Animation --> 
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+            <div id="logoutToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="images/Laptopedia.png" class="rounded me-2" alt="" style="height: 24px; width: 24px;">
+                <strong class="me-auto">Laptopedia</strong>
+                <small>sekarang</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Anda berhasil <i>Logout</i>!.
+              </div>
+            </div>
+        </div>
+        <!-- Main Container -->
+        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+            <div class="row border rounded-5 p-3 shadow box-area glass flip-container">
+                <div class="flip-card">
+                    <!-- Sisi depan (Login) -->
+                    <div class="flip-card-front">
+                        <div class="row">
+                            <!-- Left Box -->
+                            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background-color: #19aad63f;">
+                                <div class="featured-image mb-3">
+                                   <img src="images/gambarlogin.svg" class="img-fluid mt-3" style="width: 250px;">
+                                   <p class="text-white fs-1" style="font-weight: 600; font-family: 'Winky Rough';">Be Verified</p>
+                                   <small class="text-white text-wrap text-center fs-5" style="width: 17rem; font-family: 'Winky Rough';">Login untuk kemudahan pembelian.</small> 
+                                </div>
+                            </div>
+                            <!-- Right Box -->
+                            <div class="col-md-6 right-box">
+                                <div class="row align-items-center">
+                                    <div class="header-text mb-4 fs-5">
+                                        <h2 class="text-white">Hello, Again!</h2>
+                                        <p class="text-white"><span class="fw-bolder text-info">Laptopedia</span> senang dapat bertemu anda kembali.</p>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id="loginEmail" type="text" class="form-control form-control-lg bg-light fs-5" placeholder="Email">
+                                    </div>
+                                    <div class="input-group mb-1">
+                                        <input id="loginPass" type="password" class="form-control form-control-lg bg-light fs-5" placeholder="Password">
+                                    </div>
+                                    <div class="input-group mb-5 d-flex justify-content-between">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="formCheck rememberMe">
+                                            <label for="formCheck rememberMe" class="form-check-label text-white">Remember me</label>
+                                        </div>
+                                        <div class="forgot">
+                                            <small><a href="#" class="text-warning">Forgot password?</a></small>
+                                        </div>
+                                    </div>
+                                    <div class="input-group mb-3 login">
+                                        <button id="btnLogin" type="button" class="btn btn-large w-100 fs-4">Login</button>
+                                    </div>
+                                    <div class="input-group mb-3 google-button">
+                                    <button class="btn btn-large btn-light w-100 fs-4"><img src="images/logogoogle.png" style="width: 30px;" class="me-2"><small>Sign In with Google</small></button>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-white">Belum punya akun? <a href="#" class="text-warning flip-btn">Sign Up</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Back Side (Sign Up) -->
+                    <div class="flip-card-back">
+                        <div class="row">
+                            <!-- Left Box -->
+                            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background-color: #19aad63f;">
+                                <div class="featured-image mb-3">
+                                    <img src="images/undraw_sign-up_z2ku.svg" class="img-fluid mt-3" style="width: 250px;">
+                                    <p class="text-white fs-1" style="font-weight: 600; font-family: 'Winky Rough';">Join Us</p>
+                                    <small class="text-white text-wrap text-center fs-6" style="width: 17rem; font-family: 'Winky Rough';">Daftar sekarang untuk pengalaman belanja terbaik.</small>
+                                </div>
+                            </div>
+                            <!-- Right Box -->
+                            <div class="col-md-6 right-box">
+                                <div class="row align-items-center">
+                                    <div class="header-text mb-4 fs-5">
+                                        <h2 class="text-white">Welcome!</h2>
+                                        <p class="text-white"><span class="fw-bolder text-info">Laptopedia</span> siap melayani kebutuhan anda.</p>
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id="signupNama" type="text" class="form-control form-control-lg bg-light fs-5" placeholder="Nama Lengkap">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id="signupEmail" type="email" class="form-control form-control-lg bg-light fs-5" placeholder="Email">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id="signupPass" type="password" class="form-control form-control-lg bg-light fs-5" placeholder="Password">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <input id="signupAlamat" type="text" class="form-control form-control-lg bg-light fs-5" placeholder="Alamat Lengkap (+Kode Pos)">
+                                    </div>
+                                    <div class="input-group mb-3 login">
+                                        <button type="button" id="btnSignup" class="btn btn-large w-100 fs-4">Sign Up</button>
+                                    </div>
+                                    <div class="row">
+                                        <small class="text-white">Sudah punya akun? <a href="#" class="text-warning flip-btn">Login</a></small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+        <!-- Flip Card -->
+        <script>
+            document.querySelectorAll('.flip-btn').forEach(btn => {
+              btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector('.flip-container').classList.toggle('flipped');
+              });
+            });
+        </script>
+        <!-- Logout Toast -->
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+              if (localStorage.getItem('showLogoutToast') === '1') {
+                const toastEl = document.getElementById('logoutToast');
+                const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+                toast.show();
+                localStorage.removeItem('showLogoutToast');
+              }
+            });
+        </script>
+        <script src="js/auth.js"></script>
+    </body>
+</html>
