@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return;
   }
 
-  fetch(`http://localhost:3000/get-orders?email=${encodeURIComponent(email)}`)
+  fetch(`http://145.79.10.174:3000/get-orders?email=${encodeURIComponent(email)}`)
   .then((response) => {
     console.log("Status Code:", response.status);
     if (!response.ok) {
