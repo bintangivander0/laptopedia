@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const API = 'http://localhost:3000';
+  const API = 'http://145.79.10.174:3000';
 
   // SIGN UP
   document.getElementById('btnSignup').addEventListener('click', async (e) => {
