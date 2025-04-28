@@ -6,6 +6,15 @@ const path       = require('path');
 const csv        = require('csv-parser');
 const ORDERS_CSV_PATH = path.join(__dirname, 'orders.csv'); 
 
+const cors = require('cors');
+
+// Konfigurasi CORS
+app.use(cors({
+  origin: 'http://145.79.10.174:3000', // Ganti '*' dengan domain frontend Anda jika sudah menggunakan domain
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Metode HTTP yang diizinkan
+  allowedHeaders: ['Content-Type', 'Authorization'], // Header yang diizinkan
+}));
+
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
